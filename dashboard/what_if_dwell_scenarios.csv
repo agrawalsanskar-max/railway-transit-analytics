@@ -1,0 +1,5 @@
+Scenario,Dwell Reduction %,Total Dwell Hours,Daily Hours Saved
+Baseline,0%,6897.6,0.0
+Moderate Optimization,10%,6207.84,689.7600000000001
+Advanced Optimization,15%,5862.96,1034.64
+Peak Smart-Signaling,20%,5518.080000000001,1379.5200000000002

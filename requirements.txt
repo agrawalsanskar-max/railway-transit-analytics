@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+folium
+sweetviz
+scikit-learn
+openpyxl
