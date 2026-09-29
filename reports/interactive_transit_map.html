@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6dd80dcba48f77434db41e8adbcb6d84 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6dd80dcba48f77434db41e8adbcb6d84" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6dd80dcba48f77434db41e8adbcb6d84 = L.map(
+                "map_6dd80dcba48f77434db41e8adbcb6d84",
+                {
+                    center: [21.7679, 78.8718],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c1e8c36ca3110e2382776fa4bb6affb7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c1e8c36ca3110e2382776fa4bb6affb7.addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+            var circle_marker_3dc661d22b7ccad6d97f5ed9806dfd40 = L.circleMarker(
+                [23.0225, 72.5714],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_a8bee09b4e4dd4664b5bf6538f6d3bc0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fa8561dd1873b356043ee7f35ea6d75c = $(`<div id="html_fa8561dd1873b356043ee7f35ea6d75c" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Ahmedabad Junction</h4>         <b>Station Code:</b> ADI<br>         <b>Total Transits:</b> 305<br>         <b>Avg Halt:</b> 11.84 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>42</span>     </div>     </div>`)[0];
+                popup_a8bee09b4e4dd4664b5bf6538f6d3bc0.setContent(html_fa8561dd1873b356043ee7f35ea6d75c);
+            
+        
+
+        circle_marker_3dc661d22b7ccad6d97f5ed9806dfd40.bindPopup(popup_a8bee09b4e4dd4664b5bf6538f6d3bc0)
+        ;
+
+        
+    
+    
+            circle_marker_3dc661d22b7ccad6d97f5ed9806dfd40.bindTooltip(
+                `<div>
+                     Ahmedabad Junction (305 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad467bd4a9ea202817ad485442a1fc5d = L.circleMarker(
+                [23.2599, 77.4126],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_c36965e10fce77e53a428d37c43e5a60 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b80f11191c678a43f3d6526d8a0b7f2d = $(`<div id="html_b80f11191c678a43f3d6526d8a0b7f2d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Bhopal Junction</h4>         <b>Station Code:</b> BPL<br>         <b>Total Transits:</b> 239<br>         <b>Avg Halt:</b> 7.65 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>51</span>     </div>     </div>`)[0];
+                popup_c36965e10fce77e53a428d37c43e5a60.setContent(html_b80f11191c678a43f3d6526d8a0b7f2d);
+            
+        
+
+        circle_marker_ad467bd4a9ea202817ad485442a1fc5d.bindPopup(popup_c36965e10fce77e53a428d37c43e5a60)
+        ;
+
+        
+    
+    
+            circle_marker_ad467bd4a9ea202817ad485442a1fc5d.bindTooltip(
+                `<div>
+                     Bhopal Junction (239 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c33ccf08080bdd561d8dd490c7b4da1 = L.circleMarker(
+                [22.3107, 73.1812],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.56, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_95aee387fc97591a3748d91835fee057 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_54917d16efcadde650147684efb58f96 = $(`<div id="html_54917d16efcadde650147684efb58f96" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Vadodara Junction</h4>         <b>Station Code:</b> BRC<br>         <b>Total Transits:</b> 378<br>         <b>Avg Halt:</b> 8.49 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>51</span>     </div>     </div>`)[0];
+                popup_95aee387fc97591a3748d91835fee057.setContent(html_54917d16efcadde650147684efb58f96);
+            
+        
+
+        circle_marker_8c33ccf08080bdd561d8dd490c7b4da1.bindPopup(popup_95aee387fc97591a3748d91835fee057)
+        ;
+
+        
+    
+    
+            circle_marker_8c33ccf08080bdd561d8dd490c7b4da1.bindTooltip(
+                `<div>
+                     Vadodara Junction (378 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f910e459026617d14531b55aae77b528 = L.circleMarker(
+                [16.5186, 80.6199],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.32, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_f24566390171d3dfa70a29efa88a9f73 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_28364ff44635a252e21152fd0da421fc = $(`<div id="html_28364ff44635a252e21152fd0da421fc" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Vijayawada Junction</h4>         <b>Station Code:</b> BZA<br>         <b>Total Transits:</b> 416<br>         <b>Avg Halt:</b> 11.78 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>83</span>     </div>     </div>`)[0];
+                popup_f24566390171d3dfa70a29efa88a9f73.setContent(html_28364ff44635a252e21152fd0da421fc);
+            
+        
+
+        circle_marker_f910e459026617d14531b55aae77b528.bindPopup(popup_f24566390171d3dfa70a29efa88a9f73)
+        ;
+
+        
+    
+    
+            circle_marker_f910e459026617d14531b55aae77b528.bindTooltip(
+                `<div>
+                     Vijayawada Junction (416 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c28707a6fdb145ecf71303759885f69b = L.circleMarker(
+                [19.0657, 72.8793],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.24, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_3936d09973bd94799aa05e94be8fdf80 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_73ffc521ef038a79311fd83ac47e91a8 = $(`<div id="html_73ffc521ef038a79311fd83ac47e91a8" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Kurla</h4>         <b>Station Code:</b> CLA<br>         <b>Total Transits:</b> 462<br>         <b>Avg Halt:</b> 0.87 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>0</span>     </div>     </div>`)[0];
+                popup_3936d09973bd94799aa05e94be8fdf80.setContent(html_73ffc521ef038a79311fd83ac47e91a8);
+            
+        
+
+        circle_marker_c28707a6fdb145ecf71303759885f69b.bindPopup(popup_3936d09973bd94799aa05e94be8fdf80)
+        ;
+
+        
+    
+    
+            circle_marker_c28707a6fdb145ecf71303759885f69b.bindTooltip(
+                `<div>
+                     Kurla (462 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_380e3e4a9a7194b08c73bf4ebb5228f8 = L.circleMarker(
+                [26.4547, 80.3507],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.66, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_7051f863d1a4d3035446d5d53734d6f2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a1bf900e7495a782593eeb11089d4c5b = $(`<div id="html_a1bf900e7495a782593eeb11089d4c5b" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Kanpur Central</h4>         <b>Station Code:</b> CNB<br>         <b>Total Transits:</b> 383<br>         <b>Avg Halt:</b> 6.54 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>99</span>     </div>     </div>`)[0];
+                popup_7051f863d1a4d3035446d5d53734d6f2.setContent(html_a1bf900e7495a782593eeb11089d4c5b);
+            
+        
+
+        circle_marker_380e3e4a9a7194b08c73bf4ebb5228f8.bindPopup(popup_7051f863d1a4d3035446d5d53734d6f2)
+        ;
+
+        
+    
+    
+            circle_marker_380e3e4a9a7194b08c73bf4ebb5228f8.bindTooltip(
+                `<div>
+                     Kanpur Central (383 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d77b5a0eeb89f54741f028aeaf96c36c = L.circleMarker(
+                [18.94, 72.8354],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.54, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_6a60e891d5b395493a533d0a0ba053ee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2de9d05dc5ca51683fdb4f6990304880 = $(`<div id="html_2de9d05dc5ca51683fdb4f6990304880" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Chhatrapati Shivaji Maharaj Terminus</h4>         <b>Station Code:</b> CSMT<br>         <b>Total Transits:</b> 1,027<br>         <b>Avg Halt:</b> 0.00 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>1</span>     </div>     </div>`)[0];
+                popup_6a60e891d5b395493a533d0a0ba053ee.setContent(html_2de9d05dc5ca51683fdb4f6990304880);
+            
+        
+
+        circle_marker_d77b5a0eeb89f54741f028aeaf96c36c.bindPopup(popup_6a60e891d5b395493a533d0a0ba053ee)
+        ;
+
+        
+    
+    
+            circle_marker_d77b5a0eeb89f54741f028aeaf96c36c.bindTooltip(
+                `<div>
+                     Chhatrapati Shivaji Maharaj Terminus (1027 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c79a49167329af8fa0cd58c3f206510b = L.circleMarker(
+                [22.6214, 88.3934],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.26, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_e80f0536f6899d4c5692c9d63d53f506 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1eafa2b46867d231427f3191aba48983 = $(`<div id="html_1eafa2b46867d231427f3191aba48983" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Dum Dum Junction</h4>         <b>Station Code:</b> DDJ<br>         <b>Total Transits:</b> 463<br>         <b>Avg Halt:</b> 1.01 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>0</span>     </div>     </div>`)[0];
+                popup_e80f0536f6899d4c5692c9d63d53f506.setContent(html_1eafa2b46867d231427f3191aba48983);
+            
+        
+
+        circle_marker_c79a49167329af8fa0cd58c3f206510b.bindPopup(popup_e80f0536f6899d4c5692c9d63d53f506)
+        ;
+
+        
+    
+    
+            circle_marker_c79a49167329af8fa0cd58c3f206510b.bindTooltip(
+                `<div>
+                     Dum Dum Junction (463 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a74ad6e9789b04fba1ab31f0b2159b7e = L.circleMarker(
+                [19.0178, 72.8478],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.34, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_bfae4ad8bc9408c22f5d84a423adf864 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d9f5bcb1fc7c13048159d27a5721aff3 = $(`<div id="html_d9f5bcb1fc7c13048159d27a5721aff3" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Dadar</h4>         <b>Station Code:</b> DR<br>         <b>Total Transits:</b> 567<br>         <b>Avg Halt:</b> 1.14 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>0</span>     </div>     </div>`)[0];
+                popup_bfae4ad8bc9408c22f5d84a423adf864.setContent(html_d9f5bcb1fc7c13048159d27a5721aff3);
+            
+        
+
+        circle_marker_a74ad6e9789b04fba1ab31f0b2159b7e.bindPopup(popup_bfae4ad8bc9408c22f5d84a423adf864)
+        ;
+
+        
+    
+    
+            circle_marker_a74ad6e9789b04fba1ab31f0b2159b7e.bindTooltip(
+                `<div>
+                     Dadar (567 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a2406d4652b4ee81595d5c530cccce0 = L.circleMarker(
+                [26.2183, 78.1828],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_d6b2aa4dbc60537f5c571cbb983e424a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_318d3587b9f9d7519e55d7cc49b8b472 = $(`<div id="html_318d3587b9f9d7519e55d7cc49b8b472" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Gwalior Junction</h4>         <b>Station Code:</b> GWL<br>         <b>Total Transits:</b> 160<br>         <b>Avg Halt:</b> 4.92 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>5</span>     </div>     </div>`)[0];
+                popup_d6b2aa4dbc60537f5c571cbb983e424a.setContent(html_318d3587b9f9d7519e55d7cc49b8b472);
+            
+        
+
+        circle_marker_5a2406d4652b4ee81595d5c530cccce0.bindPopup(popup_d6b2aa4dbc60537f5c571cbb983e424a)
+        ;
+
+        
+    
+    
+            circle_marker_5a2406d4652b4ee81595d5c530cccce0.bindTooltip(
+                `<div>
+                     Gwalior Junction (160 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_047c289b9a986abc2a7a5cb76b1d21a8 = L.circleMarker(
+                [22.585, 88.3468],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.98, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_42be7ad38e3b0b954e9f4469d07eefaa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_72aefeee3c4469b1e0c0694e885d2cb1 = $(`<div id="html_72aefeee3c4469b1e0c0694e885d2cb1" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Howrah Junction</h4>         <b>Station Code:</b> HWH<br>         <b>Total Transits:</b> 699<br>         <b>Avg Halt:</b> 0.82 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>30</span>     </div>     </div>`)[0];
+                popup_42be7ad38e3b0b954e9f4469d07eefaa.setContent(html_72aefeee3c4469b1e0c0694e885d2cb1);
+            
+        
+
+        circle_marker_047c289b9a986abc2a7a5cb76b1d21a8.bindPopup(popup_42be7ad38e3b0b954e9f4469d07eefaa)
+        ;
+
+        
+    
+    
+            circle_marker_047c289b9a986abc2a7a5cb76b1d21a8.bindTooltip(
+                `<div>
+                     Howrah Junction (699 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a52b3eb0b855b3996c3bac59bfdd535 = L.circleMarker(
+                [26.9196, 75.7878],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_1ddb4bd279d1588bee165a857d9e3095 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a5a73fc2aa455fba539b36ddd805c213 = $(`<div id="html_a5a73fc2aa455fba539b36ddd805c213" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Jaipur Junction</h4>         <b>Station Code:</b> JP<br>         <b>Total Transits:</b> 182<br>         <b>Avg Halt:</b> 8.32 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>7</span>     </div>     </div>`)[0];
+                popup_1ddb4bd279d1588bee165a857d9e3095.setContent(html_a5a73fc2aa455fba539b36ddd805c213);
+            
+        
+
+        circle_marker_6a52b3eb0b855b3996c3bac59bfdd535.bindPopup(popup_1ddb4bd279d1588bee165a857d9e3095)
+        ;
+
+        
+    
+    
+            circle_marker_6a52b3eb0b855b3996c3bac59bfdd535.bindTooltip(
+                `<div>
+                     Jaipur Junction (182 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbb90cfec373c5e86519060fd72a5c2b = L.circleMarker(
+                [19.2361, 73.1306],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.56, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_991884bc5b8ea2c6fba557d1ebd23345 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5646af20178003bf8f68469e79e2bcf6 = $(`<div id="html_5646af20178003bf8f68469e79e2bcf6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Kalyan Junction</h4>         <b>Station Code:</b> KYN<br>         <b>Total Transits:</b> 828<br>         <b>Avg Halt:</b> 0.95 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>8</span>     </div>     </div>`)[0];
+                popup_991884bc5b8ea2c6fba557d1ebd23345.setContent(html_5646af20178003bf8f68469e79e2bcf6);
+            
+        
+
+        circle_marker_cbb90cfec373c5e86519060fd72a5c2b.bindPopup(popup_991884bc5b8ea2c6fba557d1ebd23345)
+        ;
+
+        
+    
+    
+            circle_marker_cbb90cfec373c5e86519060fd72a5c2b.bindTooltip(
+                `<div>
+                     Kalyan Junction (828 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75306214e90f2bb381a78a2dbc623966 = L.circleMarker(
+                [26.8306, 80.9234],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_46b1a759e76f5d8f8e46d4f6d82c04b4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d2ec67f49032e0b5e9ab3230ae566b36 = $(`<div id="html_d2ec67f49032e0b5e9ab3230ae566b36" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Lucknow Charbagh</h4>         <b>Station Code:</b> LKO<br>         <b>Total Transits:</b> 295<br>         <b>Avg Halt:</b> 11.63 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>88</span>     </div>     </div>`)[0];
+                popup_46b1a759e76f5d8f8e46d4f6d82c04b4.setContent(html_d2ec67f49032e0b5e9ab3230ae566b36);
+            
+        
+
+        circle_marker_75306214e90f2bb381a78a2dbc623966.bindPopup(popup_46b1a759e76f5d8f8e46d4f6d82c04b4)
+        ;
+
+        
+    
+    
+            circle_marker_75306214e90f2bb381a78a2dbc623966.bindTooltip(
+                `<div>
+                     Lucknow Charbagh (295 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_746ab188cc34647e92eda769b4492ee3 = L.circleMarker(
+                [13.097, 80.2936],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.76, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_95471ce776d8cc7fc7fe0c2cd6bdcdf3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_162bb0a0f34964608363cdcb84329ddb = $(`<div id="html_162bb0a0f34964608363cdcb84329ddb" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Chennai Beach</h4>         <b>Station Code:</b> MSB<br>         <b>Total Transits:</b> 738<br>         <b>Avg Halt:</b> 0.45 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>0</span>     </div>     </div>`)[0];
+                popup_95471ce776d8cc7fc7fe0c2cd6bdcdf3.setContent(html_162bb0a0f34964608363cdcb84329ddb);
+            
+        
+
+        circle_marker_746ab188cc34647e92eda769b4492ee3.bindPopup(popup_95471ce776d8cc7fc7fe0c2cd6bdcdf3)
+        ;
+
+        
+    
+    
+            circle_marker_746ab188cc34647e92eda769b4492ee3.bindTooltip(
+                `<div>
+                     Chennai Beach (738 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8de2deb3e5b0cfa12f82fb3c4a67b310 = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.1, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_f7723e269a806f767c549b209e893be1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_143db33e221cc2a3398036de13cff932 = $(`<div id="html_143db33e221cc2a3398036de13cff932" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>New Delhi</h4>         <b>Station Code:</b> NDLS<br>         <b>Total Transits:</b> 355<br>         <b>Avg Halt:</b> 7.28 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>77</span>     </div>     </div>`)[0];
+                popup_f7723e269a806f767c549b209e893be1.setContent(html_143db33e221cc2a3398036de13cff932);
+            
+        
+
+        circle_marker_8de2deb3e5b0cfa12f82fb3c4a67b310.bindPopup(popup_f7723e269a806f767c549b209e893be1)
+        ;
+
+        
+    
+    
+            circle_marker_8de2deb3e5b0cfa12f82fb3c4a67b310.bindTooltip(
+                `<div>
+                     New Delhi (355 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75531560d6fd7640ef6e51fff54c6614 = L.circleMarker(
+                [21.1524, 79.0888],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_c6ef8f56b722b8066400ed7a8e3367e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03f46cd2be30cd5b967473aba052f956 = $(`<div id="html_03f46cd2be30cd5b967473aba052f956" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Nagpur Junction</h4>         <b>Station Code:</b> NGP<br>         <b>Total Transits:</b> 252<br>         <b>Avg Halt:</b> 10.20 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>84</span>     </div>     </div>`)[0];
+                popup_c6ef8f56b722b8066400ed7a8e3367e6.setContent(html_03f46cd2be30cd5b967473aba052f956);
+            
+        
+
+        circle_marker_75531560d6fd7640ef6e51fff54c6614.bindPopup(popup_c6ef8f56b722b8066400ed7a8e3367e6)
+        ;
+
+        
+    
+    
+            circle_marker_75531560d6fd7640ef6e51fff54c6614.bindTooltip(
+                `<div>
+                     Nagpur Junction (252 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f735cf4a5230528cfc9320b258086b6 = L.circleMarker(
+                [25.5941, 85.1376],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_50389a56cc8b11b1509d53f96bd1092a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f701548dfee17a66e861c99d23de2b68 = $(`<div id="html_f701548dfee17a66e861c99d23de2b68" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Patna Junction</h4>         <b>Station Code:</b> PNBE<br>         <b>Total Transits:</b> 246<br>         <b>Avg Halt:</b> 5.02 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>22</span>     </div>     </div>`)[0];
+                popup_50389a56cc8b11b1509d53f96bd1092a.setContent(html_f701548dfee17a66e861c99d23de2b68);
+            
+        
+
+        circle_marker_2f735cf4a5230528cfc9320b258086b6.bindPopup(popup_50389a56cc8b11b1509d53f96bd1092a)
+        ;
+
+        
+    
+    
+            circle_marker_2f735cf4a5230528cfc9320b258086b6.bindTooltip(
+                `<div>
+                     Patna Junction (246 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ce026135621d5ff20b1fc52c1bda1be = L.circleMarker(
+                [18.9894, 73.1175],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.04, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_d81445df6b897b0394ef69eb6e20e248 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_92879e36c677ee9557b1f71fac39f3c9 = $(`<div id="html_92879e36c677ee9557b1f71fac39f3c9" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Panvel</h4>         <b>Station Code:</b> PNVL<br>         <b>Total Transits:</b> 402<br>         <b>Avg Halt:</b> 1.45 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>17</span>     </div>     </div>`)[0];
+                popup_d81445df6b897b0394ef69eb6e20e248.setContent(html_92879e36c677ee9557b1f71fac39f3c9);
+            
+        
+
+        circle_marker_8ce026135621d5ff20b1fc52c1bda1be.bindPopup(popup_d81445df6b897b0394ef69eb6e20e248)
+        ;
+
+        
+    
+    
+            circle_marker_8ce026135621d5ff20b1fc52c1bda1be.bindTooltip(
+                `<div>
+                     Panvel (402 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71a2419f3bc4f7a319fd3c1c09e60707 = L.circleMarker(
+                [18.5284, 73.8744],
+                {"bubblingMouseEvents": true, "color": "#d0021b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0021b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_775a6aa6db8802ffb42fcf15706f047f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c869fc20d019677aaddab9f0965add0e = $(`<div id="html_c869fc20d019677aaddab9f0965add0e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Pune Junction</h4>         <b>Station Code:</b> PUNE<br>         <b>Total Transits:</b> 278<br>         <b>Avg Halt:</b> 3.63 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>19</span>     </div>     </div>`)[0];
+                popup_775a6aa6db8802ffb42fcf15706f047f.setContent(html_c869fc20d019677aaddab9f0965add0e);
+            
+        
+
+        circle_marker_71a2419f3bc4f7a319fd3c1c09e60707.bindPopup(popup_775a6aa6db8802ffb42fcf15706f047f)
+        ;
+
+        
+    
+    
+            circle_marker_71a2419f3bc4f7a319fd3c1c09e60707.bindTooltip(
+                `<div>
+                     Pune Junction (278 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73c6ca16b3f93541145cb14fcdfd1658 = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_3cbaa50ac2d7ea0cbdabe91f7c38a39d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4c1bf176af1ceda52a6c1bb0b346d575 = $(`<div id="html_4c1bf176af1ceda52a6c1bb0b346d575" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>KSR Bengaluru</h4>         <b>Station Code:</b> SBC<br>         <b>Total Transits:</b> 167<br>         <b>Avg Halt:</b> 3.57 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>8</span>     </div>     </div>`)[0];
+                popup_3cbaa50ac2d7ea0cbdabe91f7c38a39d.setContent(html_4c1bf176af1ceda52a6c1bb0b346d575);
+            
+        
+
+        circle_marker_73c6ca16b3f93541145cb14fcdfd1658.bindPopup(popup_3cbaa50ac2d7ea0cbdabe91f7c38a39d)
+        ;
+
+        
+    
+    
+            circle_marker_73c6ca16b3f93541145cb14fcdfd1658.bindTooltip(
+                `<div>
+                     KSR Bengaluru (167 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0713f4d98c1a6168944ab210fba52bb6 = L.circleMarker(
+                [22.5667, 88.3716],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.9, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_cce6071759394091f8a0af1e5161e9b2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3386fa2c14d3384603127a48bc53c01f = $(`<div id="html_3386fa2c14d3384603127a48bc53c01f" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Sealdah</h4>         <b>Station Code:</b> SDAH<br>         <b>Total Transits:</b> 745<br>         <b>Avg Halt:</b> 0.00 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>1</span>     </div>     </div>`)[0];
+                popup_cce6071759394091f8a0af1e5161e9b2.setContent(html_3386fa2c14d3384603127a48bc53c01f);
+            
+        
+
+        circle_marker_0713f4d98c1a6168944ab210fba52bb6.bindPopup(popup_cce6071759394091f8a0af1e5161e9b2)
+        ;
+
+        
+    
+    
+            circle_marker_0713f4d98c1a6168944ab210fba52bb6.bindTooltip(
+                `<div>
+                     Sealdah (745 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a71bc0a86e074546f85715df19a522a0 = L.circleMarker(
+                [12.9249, 80.12],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.68, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_dbbef523080fe09c2bc82746f5e3470d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_06d4fe55a291ebed82105bc1531ce200 = $(`<div id="html_06d4fe55a291ebed82105bc1531ce200" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Tambaram</h4>         <b>Station Code:</b> TBM<br>         <b>Total Transits:</b> 434<br>         <b>Avg Halt:</b> 0.93 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>0</span>     </div>     </div>`)[0];
+                popup_dbbef523080fe09c2bc82746f5e3470d.setContent(html_06d4fe55a291ebed82105bc1531ce200);
+            
+        
+
+        circle_marker_a71bc0a86e074546f85715df19a522a0.bindPopup(popup_dbbef523080fe09c2bc82746f5e3470d)
+        ;
+
+        
+    
+    
+            circle_marker_a71bc0a86e074546f85715df19a522a0.bindTooltip(
+                `<div>
+                     Tambaram (434 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_745b93b14feeebbc491d01d43b59942c = L.circleMarker(
+                [19.186, 72.9759],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.92, "stroke": true, "weight": 2}
+            ).addTo(map_6dd80dcba48f77434db41e8adbcb6d84);
+        
+    
+        var popup_53658dc2eed37b4b7c06e9e9c3e27fdd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bde565c589f69b7ff263dab951758591 = $(`<div id="html_bde565c589f69b7ff263dab951758591" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial, sans-serif; font-size: 12px; width: 190px;'>         <h4 style='margin: 0 0 5px 0; color: #0d3b66;'>Thane</h4>         <b>Station Code:</b> TNA<br>         <b>Total Transits:</b> 796<br>         <b>Avg Halt:</b> 0.83 min<br>         <b>Detected Anomalies:</b> <span style='color:red;'>1</span>     </div>     </div>`)[0];
+                popup_53658dc2eed37b4b7c06e9e9c3e27fdd.setContent(html_bde565c589f69b7ff263dab951758591);
+            
+        
+
+        circle_marker_745b93b14feeebbc491d01d43b59942c.bindPopup(popup_53658dc2eed37b4b7c06e9e9c3e27fdd)
+        ;
+
+        
+    
+    
+            circle_marker_745b93b14feeebbc491d01d43b59942c.bindTooltip(
+                `<div>
+                     Thane (796 trains)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
