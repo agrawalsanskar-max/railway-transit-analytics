@@ -58,8 +58,13 @@ print("\n==================================================")
 print("2. RENDERING INTERACTIVE FOLIUM MAP")
 print("==================================================")
 
-# Standard OpenStreetMap tile (no API token required)
-india_map = folium.Map(location=[21.7679, 78.8718], zoom_start=5, tiles="OpenStreetMap")
+# Esri World Street Map tiles (reliable, unmetered, no 403 or watermarks)
+india_map = folium.Map(
+    location=[20.5937, 78.9629],
+    zoom_start=5,
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+    attr="Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS"
+)
 
 for _, row in mapped_stations.iterrows():
     radius = max(6, min(22, row["total_trains"] / 50))
